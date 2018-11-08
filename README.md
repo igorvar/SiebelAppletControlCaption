@@ -5,6 +5,7 @@ It is proposed to take the field captions from the applet, which is based on BC.
 1. Createion BC [VIF Repository View Web Template Item], based on [Repository View Web Template Item] with the addition of the [BusComp] field.
 2. Creation BO [VIF Fields Caption] with two BCs: [VIF Repository View Web Template Item] and [SRF Applet Controls for Task Admin]
 3. Create a BS [VIF Fields Caption BS] with a function that searches in the repository for all the applets that are based on the interesting BC and are used in the interesting view. After that, for each applet found, run through all the GUI elements related to the fields and find the need one.
+
 All this objects are present in the archive AppletControlCaption.sif.
 In BS The code calls the GetFieldsCaption function with three parameters: 
 - ViewName is the name of the View for which the applet of interest is located 
@@ -25,7 +26,9 @@ Example of use on BC in a separate file.
 1. Создается BC [VIF Repository View Web Template Item] на базе [Repository View Web Template Item] с добавлением поля [BusComp]
 2. Создается BO [VIF Fields Caption] c двумя BC: [VIF Repository View Web Template Item] и [SRF Applet Controls for Task Admin]
 3. Создаем BS [VIF Fields Caption BS] с функцией, которая ищет в репозитории все апплеты, стоящие на интересуюшем BC и используемые в интересуюшем view. После этого для каждого найденого апплета пробегаемся по всем элементам GUI, относящимся к полям и находим нужное.
+
 Все объекты находятся в архиве AppletControlCaption.sif.
+
 В коде вызывается функция GetFieldsCaption с тремя параметрами: ViewName - название View для в котором находится интересующий апплет и BcName - имя BC на котором этот апплет базируется. Третий параметр: FieldList - это Siebel PS, в который будут записаны саойства с именами поле BC на апплете, значение - Caption для Control и Display Name для List Column. 
 
 Примечания:
