@@ -12,7 +12,7 @@ In BS The code calls the GetFieldsCaption function with three parameters:
 - FieldList is Siebel PS, in which the properties with the BC field on the applet will be recorded, the value is Caption for Control and Display Name for List Column.
 
 Notes:
-1. For this work correctly, View with name ViewName name must be in the repository on the server, BC and the applet is not necessary, the presence in the SRF is sufficient.
+1. For this work correctly, View with name ViewName must be in the repository on the server, BC and the applet is not necessary, the presence in the SRF is sufficient.
 2. The search is executed on all applets based on BC in view, therefore if one or several applets contain the same field (even if it is not displayed on the applet), but with different signatures, only one of them will be returned, regardless of whether Control is or List Column.
 3. A search is executed for applets explicitly prescribed for View, so Toggle Applets will not be counted. To solve the problem, you can use non-displayable elements on applets, for example List Column for Form Applets and Controls for List Applet.
 Example of use on BC in a separate file.
