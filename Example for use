@@ -1,7 +1,7 @@
 This example for using BS on BC:
 
 declaration section:
-var _FieldsCaption:PropertySet; //Property set global for this BC
+var _FieldsCaption:PropertySet; //PropertySet global for this BC. Use for data caching.
 
 function GetFieldCaption(FieldName)
 {
@@ -20,6 +20,6 @@ function GetFieldCaption(FieldName)
 
 function BusComp_PreWriteRecord()
 {
-    if (this.GetFieldValue("PhoneNumber") == ""
+    if (this.GetFieldValue("PhoneNumber") == "")
         TheApplication().RaiseErrorText("Field " + GetFieldCaption("PhoneNumber") + " is mandatory")
 }
