@@ -18,6 +18,7 @@ var _FieldsCaption:PropertySet; //Property set global for this BC
 
 function GetFieldCaption(FieldName)
 {
+    // return caption of specified field
     if (_FieldsCaption == null)
     {
         _FieldsCaption = TheApplication().NewPropertySet();
