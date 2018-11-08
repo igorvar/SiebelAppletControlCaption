@@ -1,0 +1,25 @@
+This example for using BS on BC:
+
+declaration section:
+var _FieldsCaption:PropertySet; //Property set global for this BC
+
+function GetFieldCaption(FieldName)
+{
+    // return caption of specified field
+    if (_FieldsCaption == null)
+    {
+        _FieldsCaption = TheApplication().NewPropertySet();
+        TheApplication().GetService("VIF Fields Caption BS").GetFieldsCaption(
+            TheApplication().ActiveViewName(), 
+            this.Name(), 
+            _FieldsCaption)
+     }
+
+    return _FieldsCaption.GetProperty(FieldName);
+}
+
+function BusComp_PreWriteRecord()
+{
+    if (this.GetFieldValue("PhoneNumber") == ""
+        TheApplication().RaiseErrorText("Field " + GetFieldCaption("PhoneNumber") + " is mandatory")
+}
