@@ -1,0 +1,1049 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="02/17/2017 13:54:13"
+   UPDATED_BY="SADMIN"
+   CREATED="02/17/2017 13:31:19"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   COMMENTS="LOCKED BY VTAO UI UPGRADE"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="HEB"
+	   LOCKED="Y"
+	   LOCKED_DATE="11/07/2018 14:29:17"
+	   NAME="Interactive"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="IGOR_V"
+	   UPDATED="11/08/2018 11:47:57"
+	   UPDATED_BY="IGOR_V"
+	   CREATED="10/20/1997 16:09:36"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<BUSINESS_COMPONENT
+		   CACHE_DATA="N"
+		   CLASS="CSSBusComp"
+		   DIRTY_READS="Y"
+		   DISTINCT="N"
+		   FORCE_ACTIVE="N"
+		   GENREASSIGNACT="N"
+		   INACTIVE="N"
+		   INSERT_UPDATE_ALL_COLUMNS="N"
+		   LOG_CHANGES="N"
+		   MULTI_RECIPIENT_SELECT="N"
+		   NAME="VIF Repository View Web Template Item"
+		   NO_DELETE="N"
+		   NO_INSERT="N"
+		   NO_MERGE="N"
+		   NO_UPDATE="N"
+		   OBJECT_LANGUAGE_LOCKED="HEB"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="11/07/2018 14:29:36"
+		   OWNER_DELETE="N"
+		   SCRIPTED="N"
+		   SEARCH_SPECIFICATION="[Repository Id] = RepositoryId()"
+		   TABLE="S_VIEW_WTMPL_IT"
+		   TYPE="Non-Transient"
+		   OBJECT_LOCKED_BY_NAME="IGOR_V"
+		   UPDATED="11/08/2018 11:47:58"
+		   UPDATED_BY="IGOR_V"
+		   CREATED="11/07/2018 14:29:31"
+		   CREATED_BY="IGOR_V">
+			<BUSINESS_COMPONENT_USER_PROP
+			   INACTIVE="N"
+			   NAME="DB2 Optimization Level"
+			   VALUE="3"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+			</BUSINESS_COMPONENT_USER_PROP>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="APPLET_NAME"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="Y"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Applet"
+			   NO_COPY="N"
+			   PICKLIST="Repository View Web Template Item PickList Applet"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="75"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+				<PICK_MAP
+				   FIELD="Applet"
+				   INACTIVE="N"
+				   NAME="Applet"
+				   NO_CLEAR="N"
+				   PICK_LIST_FIELD="Name"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</PICK_MAP>
+				<PICK_MAP
+				   CONSTRAIN="Y"
+				   FIELD="Repository Id"
+				   INACTIVE="N"
+				   NAME="Repository Id"
+				   NO_CLEAR="Y"
+				   PICK_LIST_FIELD="Repository Id"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</PICK_MAP>
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="APP_CD"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="Language Alias"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Application Code"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="30"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="BUSCOMP_NAME"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="VIF Applet S_APPLET"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="BusComp"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="75"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/08/2018 11:47:58"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="DISPLAY_VIS_CD"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="Y"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Display Visibility"
+			   NO_COPY="N"
+			   PICKLIST="Repository PickList View Web Template Item Visibility Type"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="30"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+				<PICK_MAP
+				   FIELD="Display Visibility"
+				   INACTIVE="N"
+				   NAME="Display Visibility"
+				   NO_CLEAR="N"
+				   PICK_LIST_FIELD="Value"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</PICK_MAP>
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="EXPR"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="Y"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="S_VIEW_WT_IT_RX"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Ext Expression"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="1000"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+				<FIELD_USER_PROP
+				   INACTIVE="N"
+				   NAME="DisplayInPropWindow"
+				   VALUE="N"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</FIELD_USER_PROP>
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="VIEW_ID"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="Parent Alias"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="GParent Id"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="15"
+			   TYPE="DTYPE_ID"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="NAME"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="GParent Alias"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="GParent Name"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="75"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="GROUP_NAME"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="Y"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="S_VIEW_WT_IT_RX"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Group Name"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="75"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+				<FIELD_USER_PROP
+				   INACTIVE="N"
+				   NAME="DisplayInPropWindow"
+				   VALUE="N"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</FIELD_USER_PROP>
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="HTML_ATTR"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="Y"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="S_VIEW_WT_IT_RX"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Html Attr"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="250"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+				<FIELD_USER_PROP
+				   INACTIVE="N"
+				   NAME="DisplayInPropWindow"
+				   VALUE="N"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</FIELD_USER_PROP>
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="INACTIVE_FLG"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="Y"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Inactive"
+			   NO_COPY="N"
+			   PRE_DEFAULT_VALUE="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="1"
+			   TYPE="DTYPE_BOOL"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="ITEM_NUM"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="Language Alias"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Item Identifier - Language Override"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TYPE="DTYPE_INTEGER"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="LANG_CD"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="Language Alias"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Language Code"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="3"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="NAMESPACE"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="Language Alias"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Namespace - Language Override"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="75"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="VIEW_WEB_TMPL_ID"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Parent Id"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="Y"
+			   TEXT_LENGTH="15"
+			   TYPE="DTYPE_ID"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="REPOSITORY_ID"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Repository Id"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="15"
+			   TYPE="DTYPE_ID"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="NAME"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="N"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="Repository Alias"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Repository Name"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="75"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="SEQUENCE"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="Y"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="S_VIEW_WT_IT_RX"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Sequence"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TYPE="DTYPE_INTEGER"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+				<FIELD_USER_PROP
+				   INACTIVE="N"
+				   NAME="DisplayInPropWindow"
+				   VALUE="N"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</FIELD_USER_PROP>
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="TMPL_ITMHOLDERNAME"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="Y"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="S_VIEW_WT_IT_RX"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Tmpl Item Holder Name"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="Y"
+			   TEXT_LENGTH="50"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+				<FIELD_USER_PROP
+				   INACTIVE="N"
+				   NAME="DisplayInPropWindow"
+				   VALUE="N"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</FIELD_USER_PROP>
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="TYPE"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="Y"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="S_VIEW_WT_IT_RX"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Type"
+			   NO_COPY="N"
+			   PICKLIST="View Web Template Item Type Pick List"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="50"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+				<FIELD_USER_PROP
+				   INACTIVE="N"
+				   NAME="DisplayInPropWindow"
+				   VALUE="N"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</FIELD_USER_PROP>
+				<PICK_MAP
+				   FIELD="Type"
+				   INACTIVE="N"
+				   NAME="Type"
+				   NO_CLEAR="N"
+				   PICK_LIST_FIELD="Value"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</PICK_MAP>
+			</FIELD>
+			<FIELD
+			   CALCULATED="N"
+			   COLUMN="WEB_TMPL_NAME"
+			   COMPOSITE="N"
+			   DISABLE_SEARCH="N"
+			   DISABLE_SORT="N"
+			   FORCE_ACTIVE="Y"
+			   HIDDEN="N"
+			   IMMEDIATE_POST_CHANGES="N"
+			   INACTIVE="N"
+			   JOIN="S_VIEW_WT_IT_RX"
+			   LINK_SPECIFICATION="N"
+			   MESSAGE_DISPLAY_MODE="User Msg with Error Code Only"
+			   MULTI_VALUED="N"
+			   NAME="Web Tmpl Name"
+			   NO_COPY="N"
+			   READ_ONLY="N"
+			   REQUIRED="N"
+			   TEXT_LENGTH="75"
+			   TYPE="DTYPE_TEXT"
+			   USE_DEFAULT_SENSITIVITY="Y"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+				<FIELD_USER_PROP
+				   INACTIVE="N"
+				   NAME="DisplayInPropWindow"
+				   VALUE="N"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</FIELD_USER_PROP>
+			</FIELD>
+			<JOIN
+			   INACTIVE="N"
+			   NAME="GParent Alias"
+			   OUTER_JOIN_FLAG="N"
+			   TABLE="S_VIEW"
+			   UPDATED="11/07/2018 14:29:31"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:31"
+			   CREATED_BY="IGOR_V">
+				<JOIN_SPECIFICATION
+				   DESTINATION_COLUMN="ROW_ID"
+				   INACTIVE="N"
+				   NAME="GParent Id"
+				   SOURCE_FIELD="GParent Id"
+				   UPDATED="11/07/2018 14:29:31"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:31"
+				   CREATED_BY="IGOR_V">
+				</JOIN_SPECIFICATION>
+			</JOIN>
+			<JOIN
+			   INACTIVE="N"
+			   NAME="Language Alias"
+			   OUTER_JOIN_FLAG="Y"
+			   TABLE="S_VIEW_WTI_INTL"
+			   UPDATED="11/07/2018 14:29:31"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:31"
+			   CREATED_BY="IGOR_V">
+				<JOIN_CONSTRAINT
+				   DESTINATION_COLUMN="APP_CD"
+				   INACTIVE="N"
+				   NAME="Application"
+				   VALUE="ToolsApplication()"
+				   UPDATED="11/07/2018 14:29:31"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:31"
+				   CREATED_BY="IGOR_V">
+				</JOIN_CONSTRAINT>
+				<JOIN_CONSTRAINT
+				   DESTINATION_COLUMN="INACTIVE_FLG"
+				   INACTIVE="N"
+				   NAME="Inactive"
+				   VALUE="N"
+				   UPDATED="11/07/2018 14:29:31"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:31"
+				   CREATED_BY="IGOR_V">
+				</JOIN_CONSTRAINT>
+				<JOIN_CONSTRAINT
+				   DESTINATION_COLUMN="LANG_CD"
+				   INACTIVE="N"
+				   NAME="Language"
+				   VALUE="ToolsLanguage()"
+				   UPDATED="11/07/2018 14:29:31"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:31"
+				   CREATED_BY="IGOR_V">
+				</JOIN_CONSTRAINT>
+				<JOIN_SPECIFICATION
+				   DESTINATION_COLUMN="VIEW_WTMPL_IT_ID"
+				   INACTIVE="N"
+				   NAME="Parent Id"
+				   SOURCE_FIELD="Id"
+				   UPDATED="11/07/2018 14:29:31"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:31"
+				   CREATED_BY="IGOR_V">
+				</JOIN_SPECIFICATION>
+			</JOIN>
+			<JOIN
+			   INACTIVE="N"
+			   NAME="Parent Alias"
+			   OUTER_JOIN_FLAG="N"
+			   TABLE="S_VIEW_WEB_TMPL"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+				<JOIN_SPECIFICATION
+				   DESTINATION_COLUMN="ROW_ID"
+				   INACTIVE="N"
+				   NAME="Parent Id"
+				   SOURCE_FIELD="Parent Id"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</JOIN_SPECIFICATION>
+			</JOIN>
+			<JOIN
+			   INACTIVE="N"
+			   NAME="Repository Alias"
+			   OUTER_JOIN_FLAG="Y"
+			   TABLE="S_REPOSITORY"
+			   UPDATED="11/07/2018 14:29:32"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:32"
+			   CREATED_BY="IGOR_V">
+				<JOIN_SPECIFICATION
+				   DESTINATION_COLUMN="ROW_ID"
+				   INACTIVE="N"
+				   NAME="Repository Id"
+				   SOURCE_FIELD="Repository Id"
+				   UPDATED="11/07/2018 14:29:32"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:32"
+				   CREATED_BY="IGOR_V">
+				</JOIN_SPECIFICATION>
+			</JOIN>
+			<JOIN
+			   INACTIVE="N"
+			   NAME="VIF Applet S_APPLET"
+			   OUTER_JOIN_FLAG="N"
+			   TABLE="S_APPLET"
+			   UPDATED="11/08/2018 11:47:38"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:29:31"
+			   CREATED_BY="IGOR_V">
+				<JOIN_CONSTRAINT
+				   DESTINATION_COLUMN="INACTIVE_FLG"
+				   INACTIVE="N"
+				   NAME="01"
+				   VALUE="N"
+				   UPDATED="11/07/2018 14:29:31"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:31"
+				   CREATED_BY="IGOR_V">
+				</JOIN_CONSTRAINT>
+				<JOIN_SPECIFICATION
+				   DESTINATION_COLUMN="NAME"
+				   INACTIVE="N"
+				   NAME="01"
+				   SOURCE_FIELD="Applet"
+				   UPDATED="11/07/2018 14:29:31"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:31"
+				   CREATED_BY="IGOR_V">
+				</JOIN_SPECIFICATION>
+				<JOIN_SPECIFICATION
+				   DESTINATION_COLUMN="REPOSITORY_ID"
+				   INACTIVE="N"
+				   NAME="02"
+				   SOURCE_FIELD="Repository Id"
+				   UPDATED="11/07/2018 14:29:31"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 14:29:31"
+				   CREATED_BY="IGOR_V">
+				</JOIN_SPECIFICATION>
+			</JOIN>
+		</BUSINESS_COMPONENT>
+		<BUSINESS_OBJECT
+		   INACTIVE="N"
+		   NAME="VIF Fields Caption"
+		   OBJECT_LANGUAGE_LOCKED="HEB"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="11/07/2018 14:36:36"
+		   QUERY_LIST_BUSINESS_COMPONENT="Query List"
+		   OBJECT_LOCKED_BY_NAME="IGOR_V"
+		   UPDATED="11/07/2018 14:36:59"
+		   UPDATED_BY="IGOR_V"
+		   CREATED="11/07/2018 14:36:21"
+		   CREATED_BY="IGOR_V">
+			<BUSINESS_OBJECT_COMPONENT
+			   BUSCOMP="SRF Applet Controls for Task Admin"
+			   INACTIVE="N"
+			   NAME="SRF Applet Controls for Task Admin"
+			   UPDATED="11/07/2018 14:36:21"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:36:21"
+			   CREATED_BY="IGOR_V">
+			</BUSINESS_OBJECT_COMPONENT>
+			<BUSINESS_OBJECT_COMPONENT
+			   BUSCOMP="VIF Repository View Web Template Item"
+			   INACTIVE="N"
+			   NAME="VIF Repository View Web Template Item"
+			   UPDATED="11/07/2018 14:36:45"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:36:21"
+			   CREATED_BY="IGOR_V">
+			</BUSINESS_OBJECT_COMPONENT>
+		</BUSINESS_OBJECT>
+		<BUSINESS_SERVICE
+		   CACHE="Y"
+		   CLASS="CSSService"
+		   DISPLAY_NAME_-_STRING_REFERENCE="X_GEN_UTIL_SERVICE"
+		   EXTERNAL_USE="Y"
+		   HIDDEN="N"
+		   INACTIVE="N"
+		   NAME="VIF Fields Caption BS"
+		   OBJECT_LANGUAGE_LOCKED="HEB"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="11/07/2018 14:40:45"
+		   SERVER_ENABLED="Y"
+		   STATE_MANAGEMENT_TYPE="Stateful"
+		   WEB_SERVICE_ENABLED="N"
+		   OBJECT_LOCKED_BY_NAME="IGOR_V"
+		   UPDATED="11/07/2018 15:32:16"
+		   UPDATED_BY="IGOR_V"
+		   CREATED="11/07/2018 14:40:29"
+		   CREATED_BY="IGOR_V">
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="GetFieldsCaption"
+			   UPDATED="11/07/2018 15:32:16"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 15:03:04"
+			   CREATED_BY="IGOR_V">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="BcName"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input / Output"
+				   UPDATED="11/07/2018 15:31:00"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 15:03:34"
+				   CREATED_BY="IGOR_V">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="Hierarchy"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="FieldList"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Hierarchy"
+				   TYPE="Output"
+				   UPDATED="11/07/2018 15:05:07"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 15:04:42"
+				   CREATED_BY="IGOR_V">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="ActiveViewName () by default"
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ViewName"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input / Output"
+				   UPDATED="11/07/2018 15:32:16"
+				   UPDATED_BY="IGOR_V"
+				   CREATED="11/07/2018 15:03:38"
+				   CREATED_BY="IGOR_V">
+				</BUSINESS_SERVICE_METHOD_ARG>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="(declarations)"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="//Your public declarations go here...  
+"
+			   SEQUENCE="1"
+			   UPDATED="11/07/2018 14:44:47"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:44:47"
+			   CREATED_BY="IGOR_V">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="GetFieldsCaption"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function GetFieldsCaption(ViewName, BcName, FieldList:PropertySet )
+{
+	//VIF. 07.11.18
+	var thisFunctionName = &quot;GetFieldsCaption&quot;;
+	var bo:BusObject;
+	var bc:BusComp;
+	var arrApplets = new Array();
+	FieldList.Reset();
+	//FieldList.SetType(ViewName);
+	//FieldList.SetValue(BcName);
+	bo = TheApplication().GetBusObject(&quot;VIF Fields Caption&quot;);
+	bc = bo.GetBusComp(&quot;VIF Repository View Web Template Item&quot;);
+	bc.ClearToQuery();
+	bc.SetSearchSpec(&quot;GParent Name&quot;,  ViewName);
+	bc.SetSearchSpec(&quot;BusComp&quot;, BcName);
+	bc.ActivateField(&quot;Applet&quot;);
+	bc.ExecuteQuery(ForwardOnly);
+	if (! bc.FirstRecord()) 
+	{
+		TheApplication().RaiseErrorText(&quot;No found in repository on SERVER View with name &apos;&quot; + ViewName + &quot;&apos; it contains applets based on BC with name &apos;&quot; + ViewName + &quot;&apos; it contains applets based on BC with name &apos;&quot; + BcName + &quot;&apos;&quot;);
+		return;
+	}
+	do
+	{
+		arrApplets[arrApplets.length] = bc.GetFieldValue(&quot;Applet&quot;);
+	} while (bc.NextRecord());
+
+	
+	bc = bo.GetBusComp(&quot;SRF Applet Controls for Task Admin&quot;);
+	for (var i = 0; i &lt; arrApplets.length; i++)
+	{
+		bc.ClearToQuery();
+		bc.SetSearchSpec(&quot;Applet Name&quot;, arrApplets[i]);
+		bc.ActivateField(&quot;Display Name&quot;);
+		bc.ActivateField(&quot;Field&quot;);
+		bc.ExecuteQuery(ForwardOnly);
+		if (! bc.FirstRecord()) continue;
+		do
+		{
+			if(bc.GetFieldValue(&quot;Field&quot;) != &quot;&quot;)
+				FieldList.SetProperty(bc.GetFieldValue(&quot;Field&quot;), bc.GetFieldValue(&quot;Display Name&quot;));
+			
+		} while (bc.NextRecord());
+	}
+	bc = null;
+    bo = null;
+    arrApplets = null
+}"
+			   SEQUENCE="2"
+			   UPDATED="11/07/2018 15:22:08"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:40:29"
+			   CREATED_BY="IGOR_V">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_PreInvokeMethod"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Service_PreInvokeMethod (MethodName, Inputs:PropertySet, Outputs:PropertySet)
+{
+	switch (MethodName)
+	{
+		case &quot;GetFieldsCaption&quot;:
+		{
+			var ps:PropertySet;
+			ps = TheApplication().NewPropertySet();
+			var viewName = Inputs.GetProperty(&quot;ViewName&quot;);
+			if (&quot;&quot; == viewName) 
+				viewName = TheApplication().ActiveViewName();
+			GetFieldsCaption(Inputs.GetProperty(&quot;ViewName&quot;), Inputs.GetProperty(&quot;BcName&quot;), ps);
+			ps.SetType(&quot;FieldList&quot;);
+			Outputs.SetProperty(&quot;ViewName&quot;, viewName);
+			Outputs.SetProperty(&quot;BcName&quot;, Inputs.GetProperty(&quot;BcName&quot;));
+			Outputs.AddChild(ps.Copy());
+			ps = null;
+			break;
+		}
+		case default:
+		{
+			return (ContinueOperation);
+		}
+	}
+			
+	return (CancelOperation);
+}"
+			   SEQUENCE="3"
+			   UPDATED="11/07/2018 15:30:30"
+			   UPDATED_BY="IGOR_V"
+			   CREATED="11/07/2018 14:41:56"
+			   CREATED_BY="IGOR_V">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+		</BUSINESS_SERVICE>
+	</PROJECT>
+</REPOSITORY>
+
+
+
